@@ -1,16 +1,24 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+        <style>
+            .facebookIcon {
+            height: 40px;
+            margin-bottom: 9px;
+            right: inherit
+        }
+        .surveyIcon {
+            height: 40px;
+            right: inherit  
+        }
+        </style>    
     <title>FriendFinder!</title>
 </head>
 
@@ -18,36 +26,28 @@
     <div class="container">
         <div class="jumbotron text-center">
             <h1>
-                <img class="facebookIcon" src="assets/images/facebook.png" alt="facebook logo"> Friend Finder
+                <img class="facebookIcon" src="./assets/images/facebook.png" alt="facebook logo"> Friend Finder
             </h1>
             <hr>
             <h2>Answer a few basic questions.</h2>
             <h2>Then find a friend with the greatest compatibility!</h2>
             <hr>
-            <a href="./survey.html">
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">
-                        <img class="surveyIcon" src="assets/images/survey.png" alt="survey logo">Go to Survey
-                </button>
-            </a>
+            <a class="btn btn-primary" href="./survey" role="button"><img class="surveyIcon" src="assets/images/survey.png">Go to Survey</a>
         </div>
     </div>
     <footer>
         <div class="container">
             <p>
-                <a href="../data/friends.js">API Friends List</a> | 
+                <a href="/api/friends">API Friends List</a> | 
                 <a href="#">GitHub Repository</a>
             </p>
         </div>
     </footer>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
 
 </html>
