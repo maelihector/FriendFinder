@@ -10,6 +10,9 @@ const PORT = process.env.PORT || 8060;
 // parse application
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+// access static files
+var publicDir = require('path').join(__dirname,'/app/public');
+app.use(express.static(publicDir));
 
 // Router
 require('./app/routing/apiRoutes')(app);
