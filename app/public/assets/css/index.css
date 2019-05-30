@@ -1,0 +1,24 @@
+
+
+.main {
+  background-image: url('../images/unsplash-1.jpg');
+  background-size: 100%;
+}
+
+.jumbotron {
+  background-color: #67add5;
+  border: 3px solid black;
+}
+
+h1, h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.btn-primary {
+  color: #0b6496;
+  background-color: #aad8b0;
+}
+
+.footer-links {
+  text-align: center;
+}
