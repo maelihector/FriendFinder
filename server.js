@@ -7,7 +7,6 @@ const app = express();
 // Set our PORT
 const PORT = process.env.PORT || 8060;
 
-
 // parse application
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -18,6 +17,6 @@ require('./app/routing/htmlRoutes')(app);
 
 // Start the server when running 'node server.js'
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is listening on port ${PORT}`);
 })
 

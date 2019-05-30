@@ -1,15 +1,16 @@
 //a POST routes /api/friends - this handles incoming survey results. will also used to handle the compatibility logic
-//Load Data
+// Load Data
 var friendsArray = require('../data/friends');
 
 module.exports = function(app){
-  //a GET route that displays JSON of all possible friends
+  // api GET route that displays JSON of all possible friends
   app.get('/api/friends', function(req,res){
     res.json(friendsArray);
   });
 
+  // post survey results when a user submits the form
   app.post('/api/friends', function(req,res){
-    //grabs the new friend's scores to compare with friends in friendsArray array
+    //grabs the new friend's scores to compare with friends in friendsArray
     var newFriendScores = req.body.scores;
     var scoresArray = [];
     var friendCount = 0;
