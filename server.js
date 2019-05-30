@@ -1,7 +1,6 @@
 // Require needen npm packages to bring into scope of server.js
 const express = require('express');
 const bodyParser = require('body-parser');
-let path = require('path');
 
 // Return an instance of an Express application.
 const app = express();
@@ -9,12 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 8060;
 
 
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+// parse application
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
+// Router
 require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
