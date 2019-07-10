@@ -209,7 +209,7 @@
         <div class="invalid-feedback">Open the Select Menu.</div>
       </div>
 
-      <button type="button" class="survey-link" data-toggle="modal" data-target="modal">Submit Survey</button>
+      <button type="button" class="survey-link submit" data-toggle="modal" data-target="modal">Submit Survey</button>
 
       <!-- Show user survey match -->
       <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
@@ -217,8 +217,9 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <h4>Meet Your New BFF</h4>
+            <hr>
             <h5 id="matchName"></h5>
-            <img id="matchPic" src="" alt="No Image" width=250px>
+            <img id="matchPic" alt="Image of best friend" width=250px>
           </div>
         </div>
       </div>
@@ -236,9 +237,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
@@ -246,72 +245,70 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
   <script type="text/javascript">
-      $(".submit").on("click", function () {
-        console.log("form was submited");
-          //form validation
-          function validateForm() {
-              var isValid = true;
-              $('.form-control').each(function () {
-                  if ($(this).val() === "") {
-                      isValid = false;
-                      $(this).next().css("display", "block");
-                      console.log("You missed something.");
-                  }
-              });
-              $('.custom-select').each(function () {
-                  if ($(this).val() === "") {
-                      isValid = false;
-                      $(this).next().css("display", "block");
-                      console.log("You missed a question.");
-                  }
-              });
-              return isValid;
+    $(".submit").on("click", function (event) {
+      event.preventDefault();
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $('.form-control').each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+            $(this).next().css("display", "block");
           }
-          //if all questions are answered
-          if (validateForm() === true) {
-              //creates a new friend from the values submitted
-              var newFriend = {
-                  name: $('#name').val().trim(),
-                  photo: $('#photo').val().trim(),
-                  scores: [
-                      $('#q1').val(),
-                      $('#q2').val(),
-                      $('#q3').val(),
-                      $('#q4').val(),
-                      $('#q5').val(),
-                      $('#q6').val(),
-                      $('#q7').val(),
-                      $('#q8').val(),
-                      $('#q9').val(),
-                      $('#q10').val(),
-                  ]
-              };
-              //Grabs current URL of website
-              var currentURL = window.location.origin;
-              //AJAX posts the data to friends API.
-              $.post(currentURL + "/api/friends", newFriend, function (data) {
-                  //Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                  $("#matchName").text(data.name);
-                  $("#matchPic").attr("src", data.photo);
-              });
-              // Show the modal with the best match
-              $('.modal').modal();
-              //clear form after submission
-              $('#name').val("");
-              $('#photo').val("");
-              $('#q1').val("");
-              $('#q2').val("");
-              $('#q3').val("");
-              $('#q4').val("");
-              $('#q5').val("");
-              $('#q6').val("");
-              $('#q7').val("");
-              $('#q8').val("");
-              $('#q9').val("");
-              $('#q10').val("");
+        });
+        $('.custom-select').each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+            $(this).next().css("display", "block");
           }
-          // return false;
-      });
+        });
+        return isValid;
+      }
+      // If all questions are answered
+      if (validateForm()) {
+        // Create a new friend from the values submitted
+        var newFriend = {
+          name: $('#name').val().trim(),
+          photo: $('#photo').val().trim(),
+          scores: [
+            $('#q1').val(),
+            $('#q2').val(),
+            $('#q3').val(),
+            $('#q4').val(),
+            $('#q5').val(),
+            $('#q6').val(),
+            $('#q7').val(),
+            $('#q8').val(),
+            $('#q9').val(),
+            $('#q10').val(),
+          ]
+        };
+        console.log(newFriend);
+        //AJAX posts the data to friends API.
+        $.post("/api/friends", newFriend, function (data) {
+          console.log(data);
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#matchName").text(data.name);
+          $("#matchPic").attr("src", data.photo);
+          // Show the modal with the best match
+          $('.modal').modal();
+          // Clear form after submission
+          $('#name').val("");
+          $('#photo').val("");
+          $('#q1').val("");
+          $('#q2').val("");
+          $('#q3').val("");
+          $('#q4').val("");
+          $('#q5').val("");
+          $('#q6').val("");
+          $('#q7').val("");
+          $('#q8').val("");
+          $('#q9').val("");
+          $('#q10').val("");
+        });
+      }
+        return false;
+    });
 </script>
 </body>
 
