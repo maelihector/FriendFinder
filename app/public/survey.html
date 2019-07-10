@@ -6,308 +6,313 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- CSS  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <title>Survey-FriendFinder!</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+
+  <title>BFF Survey!</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h2>Survey Questions</h2>
+
+  <div class="welcome survey-welcome">
+
+    <h1>Survey Questions</h1>
+    <hr>
+    <form>
+
+      <br>
+      <h2>About You</h2>
+      <br>
+
+      <div class="form-group">
+        <label class="label" for="name">
+          <h4>Name (Required)</h4>
+        </label>
+        <input type="text" class="form-control" id="name" placeholder="Name">
+        <div class="invalid-feedback">Enter your name..</div>
+      </div>
+      <div class="form-group">
+        <label class="label" for="photo">
+          <h4>Link to Photo Image (Required)</h4>
+        </label>
+        <input type="url" class="form-control" id="photo" placeholder="https://thelinktoyourphoto.com/justdoit">
+        <div class="invalid-feedback">Enter your photo URL.</div>
+      </div>
+      <br>
       <hr>
-      <form>
+      <hr>
+      <div class="form-group">
         <br>
         <h3>
-          <strong>About You</strong>
+          <strong>Question 1</strong>
         </h3>
+        <label for="q1">Do your friends consider you
+          a Social Butterfly?</label>
+        <select class="custom-select" id="q1">
+          <option value="">Select an Option</option>
+          <option value="1">Nope, I'm a loner</option>
+          <option value="2">Probably not</option>
+          <option value="3">Depends on who you ask</option>
+          <option value="4">Most will think so</option>
+          <option value="5">Absolutely</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
         <br>
+        <h3>
+          <strong>Question 2</strong>
+        </h3>
+        <label for="q2">Have you been called indecisive by people who really know you?</label>
+        <select class="custom-select" id="q2">
+          <option value="">Select an Option</option>
+          <option value="1">Never</option>
+          <option value="2">Once or Twice</option>
+          <option value="3">More than a few times</option>
+          <option value="4">Most people think I'm indecisive</option>
+          <option value="5">Yup, I can't make a decision to save my life</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 3</strong>
+        </h3>
+        <label for="q3">Do you like the outdoors?</a>
+        </label>
+        <select class="custom-select" id="q3">
+          <option value="">Select an Option</option>
+          <option value="1">Nope, I'd rather stay in my cave, thanks</option>
+          <option value="2">I'd need bugspray and sunblock before venturing out</option>
+          <option value="3">Depends on the weather</option>
+          <option value="4">I like it more than most</option>
+          <option value="5">I spend all of my free time outdoors!</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 4</strong>
+        </h3>
+        <label for="q4">How often do you drink alcohol?</label>
+        <select class="custom-select" id="q4">
+          <option value="">Select an Option</option>
+          <option value="1">I don't drink</option>
+          <option value="2">Only to not be rude</option>
+          <option value="3">Sometimes when I hang out with my friends</option>
+          <option value="4">Everytime I hang out with my friends</option>
+          <option value="5">Every chance I get, I know how to party.</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 5</strong>
+        </h3>
+        <label for="q5">Can you sometimes be a tiny bit condescending to people who you believe aren't as smart as
+          you?</label>
+        <select class="custom-select" id="q5">
+          <option value="">Select an Option</option>
+          <option value="1">No, that's rude</option>
+          <option value="2">When I catch myself doing it I feel bad immediately</option>
+          <option value="3">Sometimes, children mostly</option>
+          <option value="4">Yes, but I can't help it!</option>
+          <option value="5">Um yeah, people should know how dumb they are compared to me</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 6</strong>
+        </h3>
+        <label for="q6">Do you often get so lost in your own thoughts that you ignore or forget your
+          surroundings?</label>
+        <select class="custom-select" id="q6">
+          <option value="">Select an Option</option>
+          <option value="1">No, I'm always present, body AND mind</option>
+          <option value="2">I try not to</option>
+          <option value="3">Sometimes</option>
+          <option value="4">I check in with my surroundings every now and then</option>
+          <option value="5">Yes, I have a lot to think about</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 7</strong>
+        </h3>
+        <label for="q7">Is money your biggest motivator?</label>
+        <select class="custom-select" id="q7">
+          <option value="">Select an Option</option>
+          <option value="1">No, money is a social construct</option>
+          <option value="2">I can be happy making minimum wage</option>
+          <option value="3">Not really, but I do need to pay my bills</option>
+          <option value="4">I mean, doesn't it have to be?</option>
+          <option value="5">Absolutely, money makes the world go round</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 8</strong>
+        </h3>
+        <label for="q8">Do you value justice higher than mercy?</label>
+        <select class="custom-select" id="q8">
+          <option value="">Select an Option</option>
+          <option value="1">No, mercy and forgiveness makes us human</option>
+          <option value="2">Most people deserve some mercy</option>
+          <option value="3">Depends on the crime</option>
+          <option value="4">Most people deserve justice</option>
+          <option value="5">Yes, an eye for an eye</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 9</strong>
+        </h3>
+        <label for="q9">Do you think art is important in general?</label>
+        <select class="custom-select" id="q9">
+          <option value="">Select an Option</option>
+          <option value="1">No, art is for hippies</option>
+          <option value="2">Eh, it's important mostly for children</option>
+          <option value="3">I can appreciate art</option>
+          <option value="4">I can be artsy if I wanted to</option>
+          <option value="5">I AM Art</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
+      <div class="form-group">
+        <br>
+        <h3>
+          <strong>Question 10</strong>
+        </h3>
+        <label for="q10">Are you always busy and on the go?</label>
+        <select class="custom-select" id="q10">
+          <option value="">Select an Option</option>
+          <option value="1">Nah, I take it easy</option>
+          <option value="2">Only when there's an important deadline coming up</option>
+          <option value="3">Some weekdays only</option>
+          <option value="4">During my entire 9-5</option>
+          <option value="5">Yes, I'm a mover and a shaker</option>
+        </select>
+        <div class="invalid-feedback">Open the Select Menu.</div>
+      </div>
 
-        <div class="form-group">
-          <label class="label" for="name">
-            <h4>Name (Required)</h4>
-          </label>
-          <input type="text" class="form-control" id="name" placeholder="Name">
-          <div class="invalid-feedback">Enter your name..</div>
-        </div>
-        <div class="form-group">
-          <label class="label" for="photo">
-            <h4>Link to Photo Image (Required)</h4>
-          </label>
-          <input type="url" class="form-control" id="photo" placeholder="https://thelinktoyourphoto.com/doit">
-          <div class="invalid-feedback">Enter your photo URL.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 1</strong>
-          </h3>
-          <label for="q1">Do your friends consider you
-            <q>a social butterfly?</q></label>
-          <select class="custom-select" id="q1">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 2</strong>
-          </h3>
-          <label for="q2">Do you prefer to act immediately rather than speculate about various options?</label>
-          <select class="custom-select" id="q2">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 3</strong>
-          </h3>
-          <label for="q3">Do you avoid coming into contact with people if you can help it?</q>
-          </label>
-          <select class="custom-select" id="q3">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 4</strong>
-          </h3>
-          <label for="q4">Do you drink alcohol daily?</label>
-          <select class="custom-select" id="q4">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 5</strong>
-          </h3>
-          <label for="q5">Can you sometimes be a tiny bit condescending to people who you believe aren't as smart as you?</label>
-          <select class="custom-select" id="q5">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 6</strong>
-          </h3>
-          <label for="q6">Do you often get so lost in your own thoughts that you ignore or forget your surroundings?</label>
-          <select class="custom-select" id="q6">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 7</strong>
-          </h3>
-          <label for="q7">Is money your biggest motivator?</label>
-          <select class="custom-select" id="q7">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 8</strong>
-          </h3>
-          <label for="q8">Do you value justice higher than mercy?</label>
-          <select class="custom-select" id="q8">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 9</strong>
-          </h3>
-          <label for="q9">Do you think art is important in general?</label>
-          <select class="custom-select" id="q9">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <div class="form-group">
-          <br>
-          <h3>
-            <strong>Question 10</strong>
-          </h3>
-          <label for="q10">Are you always busy and on the go?</label>
-          <select class="custom-select" id="q10">
-            <option value="">Select an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-          <div class="invalid-feedback">Open the Select Menu.</div>
-        </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block submit" data-toggle="modal"
-          data-target="modal">Submit Survey</button>
+      <button type="button" class="survey-link" data-toggle="modal" data-target="modal">Submit Survey</button>
 
-        <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-          aria-hidden="true" id="modal">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <h4>Meet Your New BFF</h4>
-              <h5 id="matchName"></h5>
-              <img id="matchPic" src="" alt="No Image" width=250px>
-            </div>
+      <!-- Show user survey match -->
+      <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+        id="modal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <h4>Meet Your New BFF</h4>
+            <h5 id="matchName"></h5>
+            <img id="matchPic" src="" alt="No Image" width=250px>
           </div>
         </div>
-    </div>
+      </div>
+
     </form>
   </div>
-  </div>
-  <footer>
-    <div class="container">
-      <p>
-        <a href="/api/friends">API Friends List</a> |
-        <a href="https://github.com/maelihector/FriendFinder">GitHub Repository</a>
-      </p>
-    </div>
-  </footer>
+
+
+
+  <p class="footer-links">
+    <a href="/api/friends">API Friends List</a> |
+    <a href="https://github.com/maelihector/FriendFinder">GitHub Repository</a>
+  </p>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
+</script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script type="text/JavaScript">
-    $(document).ready(function () {
-            $(".submit").on("click", function () {
-                //form validation
-                function validateForm() {
-                    var isValid = true;
-                    $('.form-control').each(function () {
-                        if ($(this).val() === "") {
-                            isValid = false;
-                            $(this).next().css("display", "block");
-                            // console.log("You missed something.");
-                        }
-                    });
-                    $('.custom-select').each(function () {
-                        if ($(this).val() === "") {
-                            isValid = false;
-                            $(this).next().css("display", "block");
-                            // console.log("You missed a question.");
-                        }
-                    });
-                    return isValid;
-                }
-                //if everything is filled
-                if (validateForm() === true) {
-                    //creates a new friend from the values submitted
-                    var newFriend = {
-                        name: $('#name').val().trim(),
-                        photo: $('#photo').val().trim(),
-                        scores: [
-                            $('#q1').val(),
-                            $('#q2').val(),
-                            $('#q3').val(),
-                            $('#q4').val(),
-                            $('#q5').val(),
-                            $('#q6').val(),
-                            $('#q7').val(),
-                            $('#q8').val(),
-                            $('#q9').val(),
-                            $('#q10').val(),
-                        ]
-                    };
-                    //Grabs current URL of website
-                    var currentURL = window.location.origin;
-                    //AJAX posts the data to friends API.
-                    $.post(currentURL + "/api/friends", newFriend, function (data) {
-                        //Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                        $("#matchName").text(data.name);
-                        $("#matchPic").attr("src", data.photo);
-                    });
-                    // Show the modal with the best match
-                    $('.modal').modal();
-                    //clear form after submission
-                    $('#name').val("");
-                    $('#photo').val("");
-                    $('#q1').val("");
-                    $('#q2').val("");
-                    $('#q3').val("");
-                    $('#q4').val("");
-                    $('#q5').val("");
-                    $('#q6').val("");
-                    $('#q7').val("");
-                    $('#q8').val("");
-                    $('#q9').val("");
-                    $('#q10').val("");
-                }
-                // return false;
-            });
-        });
-    
-    </script>
+</script>
+  <script type="text/javascript">
+      $(".submit").on("click", function () {
+        console.log("form was submited");
+          //form validation
+          function validateForm() {
+              var isValid = true;
+              $('.form-control').each(function () {
+                  if ($(this).val() === "") {
+                      isValid = false;
+                      $(this).next().css("display", "block");
+                      console.log("You missed something.");
+                  }
+              });
+              $('.custom-select').each(function () {
+                  if ($(this).val() === "") {
+                      isValid = false;
+                      $(this).next().css("display", "block");
+                      console.log("You missed a question.");
+                  }
+              });
+              return isValid;
+          }
+          //if all questions are answered
+          if (validateForm() === true) {
+              //creates a new friend from the values submitted
+              var newFriend = {
+                  name: $('#name').val().trim(),
+                  photo: $('#photo').val().trim(),
+                  scores: [
+                      $('#q1').val(),
+                      $('#q2').val(),
+                      $('#q3').val(),
+                      $('#q4').val(),
+                      $('#q5').val(),
+                      $('#q6').val(),
+                      $('#q7').val(),
+                      $('#q8').val(),
+                      $('#q9').val(),
+                      $('#q10').val(),
+                  ]
+              };
+              //Grabs current URL of website
+              var currentURL = window.location.origin;
+              //AJAX posts the data to friends API.
+              $.post(currentURL + "/api/friends", newFriend, function (data) {
+                  //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                  $("#matchName").text(data.name);
+                  $("#matchPic").attr("src", data.photo);
+              });
+              // Show the modal with the best match
+              $('.modal').modal();
+              //clear form after submission
+              $('#name').val("");
+              $('#photo').val("");
+              $('#q1').val("");
+              $('#q2').val("");
+              $('#q3').val("");
+              $('#q4').val("");
+              $('#q5').val("");
+              $('#q6').val("");
+              $('#q7').val("");
+              $('#q8').val("");
+              $('#q9').val("");
+              $('#q10').val("");
+          }
+          // return false;
+      });
+</script>
 </body>
 
 </html>
