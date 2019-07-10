@@ -1,57 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friend Finder</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <title>FriendFinder!</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron text-center">
-      <h1>
-        Find Your New BFF!
-      </h1>
-      <div class="main">
-        <img src="./assets/images/iconfinder-friends.png" alt="friends logo">
-      </div>
-      <hr>
-      <h2>Just answer a few simple questions and we'll match you with a friend that has the greatest compatibility!</h2>
-      <hr>
-      <a class="btn btn-primary" href="./survey" role="button">
-        <img class="surveyIcon" src="assets/images/iconfinder-survey.png">
-        <p>
-          Start Survey
-        </p>
-      </a>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <p class="footer-links">
-        <a href="/api/friends">API Friends List</a> |
-        <a href="https://github.com/maelihector/FriendFinder">GitHub Repository</a>
+
+  <main>
+    <div class="welcome">
+      <h1><span>B</span>est <span>F</span>riend <span>F</span>inder</h1>
+      <p>
+        Stop wasting time on people who don't get you!
+        <br>
+        Let <span>BFF</span> find your new best friend based on your personality.
+        <br>
+        Take our survey today by clicking on the link below.
       </p>
+
+      <a class="survey" href="./survey">Find My New Best Friend!</a>
     </div>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+
+    <p class="footer-links">
+      <a href="/api/friends">JSON API Friends List</a> |
+      <a href="https://github.com/maelihector/FriendFinder" target="_blank">GitHub Repository</a>
+    </p>
+
+  </main>
+
 </body>
 
 </html>
