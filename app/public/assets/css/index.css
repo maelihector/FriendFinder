@@ -108,3 +108,12 @@ p>span {
 .footer-links {
   text-align: center;
 }
+
+#matchPic {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.modal-content {
+  padding: 15px;
+}

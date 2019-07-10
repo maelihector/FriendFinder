@@ -5,16 +5,17 @@ var path = require('path');
 //ROUTING
 
 module.exports = function(app){
-  //default GET route that leads to home.html - displays home page
+  // GET route that displays the home page
   app.get('/home', function (req, res) {
     res.sendFile(path.join(__dirname + '/../public/home.html'));
   });
 
+// GET route to display the survey page
   app.get('/survey', function (req, res) {
     res.sendFile(path.join(__dirname + '/../public/survey.html'));
   });
 
-  //a USE route to home page
+  // GET route catch-all route that leads to home.html
   app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname + '/../public/home.html'));
   });

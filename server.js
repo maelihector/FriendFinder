@@ -2,16 +2,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-// Return an instance of an Express application.
+
+// Return an instance of an Express application
 const app = express();
 // Set our PORT
 const PORT = process.env.PORT || 8060;
 
-// parse application
+// Set up Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// access static files
-var publicDir = require('path').join(__dirname,'/app/public');
+
+// This gives access static files
+const publicDir = require('path').join(__dirname,'/app/public');
 app.use(express.static(publicDir));
 
 // Router
