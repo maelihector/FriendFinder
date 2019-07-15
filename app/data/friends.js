@@ -1,7 +1,7 @@
 var friendsArray = [
   {
-    name: "Ryan Gosling",
-    photo: "https://www.huffingtonpost.com/2013/01/15/ryan-gosling-knits_n_2482136.html",
+    name: "Ryan Clinton",
+    photo: "https://images.unsplash.com/photo-1541418950054-c12804e149d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     scores: [
       "2",
       "3",
@@ -16,8 +16,8 @@ var friendsArray = [
     ]
   },
   {
-    name: "Kate McKinnon",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kate_McKinnon_2018_%28cropped%29.jpg/220px-Kate_McKinnon_2018_%28cropped%29.jpg",
+    name: "Kate Biden",
+    photo: "https://images.unsplash.com/photo-1541943181603-d8fe267a5dcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=624&q=80",
     scores: [
       "2",
       "1",
