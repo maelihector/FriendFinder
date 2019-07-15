@@ -12,29 +12,33 @@ module.exports = function (app) {
   app.post('/api/friends', function (req, res) {
     // Grab new friend's scores to compare with friends in friendsArray
     var newFriendScores = req.body.scores;
-    var scoresArray = [];
+    var differenceScoresArray = [];
     var bestMatch = 0;
 
-    // Run through all current friends in list
+    // Loop through all current friends in the friends array
     for (var i = 0; i < friendsArray.length; i++) {
       var scoresDiff = 0;
-      // Run through scores to compare friends
+      // Loop through the NEW friend's scores array
       for (var j = 0; j < newFriendScores.length; j++) {
+        // For each friend looped through, compare each seperate value of their scores array
+        // with each seperate value in the new friend's score array and return each difference
+        // Add all of the differences returned into a single value
         scoresDiff += (Math.abs(parseInt(friendsArray[i].scores[j]) - parseInt(newFriendScores[j])));
       }
 
-      // Push results into scoresArray
-      scoresArray.push(scoresDiff);
+      // Push each friend's total score difference number value into a single array
+      differenceScoresArray.push(scoresDiff);
     }
 
-    // After all friends are compared, find best match
-    for (var i = 0; i < scoresArray.length; i++) {
-      if (scoresArray[i] <= scoresArray[bestMatch]) {
+    // Loop through the differences array
+    for (var i = 0; i < differenceScoresArray.length; i++) {
+      if (differenceScoresArray[i] <= differenceScoresArray[bestMatch]) {
+        // Assign the index of the lowest number in the array to 'bestMatch' variable
         bestMatch = i;
       }
     }
 
-    // Return bestMatch data
+    // Return the friend with the best match by returning the index of the friend who had the lowest number of differences in scores
     var bff = friendsArray[bestMatch];
     res.json(bff);
 
