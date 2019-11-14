@@ -1,20 +1,20 @@
-# BestFriendFinder(BFF)
+# [BestFriendFinder(BFF)](https://afternoon-wildwood-74916.herokuapp.com/)
 
-## What is this?
+## What is BFF?
 
   
 
 BFF is a full-stack compatibility-based application that uses [Node.js](https://nodejs.org/en/) and [Express.js](http://expressjs.com/) to handle routing.
 
-## What does it do?
+## What does BFF do?
 
   
 
-BFF invites users to partake in a personality-based matching service by asking that users fill-out and submit a ten-question survey. BFF captures the user's submitted survey answers and compares those answers with those of other users to return and display the name and picture of the user's closest match.
+BFF invites users to partake in a personality-based matching service by asking them to fill-out and submit a ten-question survey. BFF captures the user's submitted survey answers and compares those answers with those of other users to return and display the name and picture of the user's closest match.
 
   
 
-## How does it work?
+## How does BFF work?
 
 Each survey question has five answers to choose from, each of which has a unique value of either 1, 2, 3, 4, or 5 attached to it. When a user submits a survey BFF converts the survey results into a simple array of numbers that match the values of the chosen answers:
 
@@ -43,11 +43,10 @@ BFF is hosted on [Heroku](https://heroku.com). Click [here](https://afternoon-wi
  4. [jQuery](https://jquery.com/)
  5. [Heroku](https://heroku.com)
  6. [Node.js](https://nodejs.org/en/)
+ 7. [Express](https://expressjs.com/)
 
 	 ([Npm](https://www.npmjs.com/) Installs)
 		 
-
-	--[Express](https://www.npmjs.com/package/express) 	
 --[Body-Parser](https://www.npmjs.com/package/body-parser) 	
 --[Path](https://www.npmjs.com/package/path)
   

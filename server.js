@@ -1,4 +1,4 @@
-// Require needen npm packages to bring into scope of server.js
+// Require needed npm packages to bring into scope of server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 
