@@ -37,6 +37,16 @@ form {
   padding: 10px;
 }
 
+.label {
+  font-family: 'Oswald', sans-serif;
+  color: #466995;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 form>h4 {
   color: red;
 }

@@ -29,14 +29,14 @@
 
       <div class="form-group">
         <label class="label" for="name">
-          <h4>Name (Required)</h4>
+          Name (Required)
         </label>
         <input type="text" class="form-control" id="name" placeholder="Name">
         <div class="invalid-feedback">Enter your name..</div>
       </div>
       <div class="form-group">
         <label class="label" for="photo">
-          <h4>Link to Photo Image (Required)</h4>
+          Link to Photo Image (Required)
         </label>
         <input type="url" class="form-control" id="photo" placeholder="https://thelinktoyourphoto.com/justdoit">
         <div class="invalid-feedback">Enter your photo URL.</div>
@@ -82,8 +82,7 @@
         <h3>
           <strong>Question 3</strong>
         </h3>
-        <label for="q3">Do you like the outdoors?</a>
-        </label>
+        <label for="q3">Do you like the outdoors?</label>
         <select class="custom-select" id="q3">
           <option value="">Select an Option</option>
           <option value="1">Nope, I'd rather stay in my cave, thanks</option>
@@ -212,7 +211,7 @@
       <button type="button" class="survey-link submit" data-toggle="modal" data-target="modal">Submit Survey</button>
 
       <!-- Show user survey match -->
-      <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+      <div class="modal fade modal1" tabindex="-1" role="dialog" aria-hidden="true"
         id="modal">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -244,7 +243,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
-  <script type="text/javascript">
+  <script>
     $(".submit").on("click", function (event) {
       event.preventDefault();
       // Form validation
@@ -283,10 +282,8 @@
             $('#q10').val(),
           ]
         };
-        console.log(newFriend);
         //AJAX posts the data to friends API.
         $.post("/api/friends", newFriend, function (data) {
-          console.log(data);
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#matchName").text(data.name);
           $("#matchPic").attr("src", data.photo);
