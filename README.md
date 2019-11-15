@@ -1,4 +1,4 @@
-# [BestFriendFinder(BFF)](https://afternoon-wildwood-74916.herokuapp.com/)
+# [BestFriendFinder(BFF)](https://best-friend-finder.herokuapp.com/)
 
 ## What is BFF?
 
@@ -31,9 +31,9 @@ totalDiff = 11; // 3+1+2+0+2+0+0+1+2+0;
 BFF then chooses the friend who has the least amount of total differences (if there's more than one, BFF chooses the most recent). 
 
 
-### Take the Survey  
+## How do I use BFF? 
 
-BFF is hosted on [Heroku](https://heroku.com). Click [here](https://afternoon-wildwood-74916.herokuapp.com/) to check it out. 
+BFF is hosted on [Heroku](https://heroku.com). Go to [BFF](https://best-friend-finder.herokuapp.com/) to check it out.
 
 ## Technologies Used
 
